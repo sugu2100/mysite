@@ -1,0 +1,25 @@
+/* 전체 선택 - box-sizing: border-box */
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+/* 브라우저 창 크기는 너비, 높이 20px 더 크게 함 */
+#content{
+  width: 350px;
+  height: 400px;
+  border: 2px solid #00f;
+  border-radius: 10px;
+  margin: 10px auto;
+  position: relative; 
+  /* 포지셔닝 - 부모 요소에 relative */
+}
+h2{padding: 30px 20px;}
+.desc{
+  line-height: 2.5; 
+  font-size: 1.1em;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+p{line-height: 2; padding-left: 20px;}
+b{color: red;}
+.close{position: absolute; bottom: 30px; right: 40px;}
+.close a{text-decoration: none; color: black}
+.close a:hover{text-decoration: underline; color: #00f;}

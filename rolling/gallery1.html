@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 넘기기</title>
+    <style>
+        #slideShow{
+            width: 400px; 
+            height: 300px;
+            margin:30px auto; 
+            position: relative;
+        }
+        img{float: left;}
+        button{
+            position: absolute;
+            height: 100%;         /*꽉 차게*/
+            border: none;         /*테두리 선없음*/
+            padding: 15px;
+            font-weight: 800;
+            font-size: 24px;
+            background-color: transparent;  /* 투명하게 */
+            opacity: 0.5;                    /* 불투명도 - 1이 높음 */
+            /*background-color: rgba(0, 0, 0, 0.2);*/
+        }
+        #prev{left: 0;}   /* 왼쪽에 배치*/
+        #next{right: 0;}  /* 오른쪽 끝에 배치*/
+        button:hover {
+            background-color:#222; 
+            color:#fff;   
+            opacity:0.6;     
+            cursor:pointer;  /* 커서 모양을 포인터로  */
+        }
+    </style>
+</head>
+<body>
+    <div id="slideShow">
+        <div id="slides">
+            <img src="images/img1.jpg" alt="새">
+            <img src="images/img2.jpg" alt="꽃">
+            <img src="images/img3.jpg" alt="오리">
+            <button id="prev">&lang;</button>
+            <button id="next">&rang;</button>
+        </div>
+        </div>
+    </div>
+    <script src="js/slide.js"></script>
+</body>
+</html>
